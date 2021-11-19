@@ -7,9 +7,9 @@
     <body>
 
         <div style="text-align: right;">
-            <a href="index.html">homeページ</a>
-            <a href="tags.html" style="margin: 0 0 0 10px;">HTMLタグ一覧</a>
-            <a href="moby_dick.html" style="margin: 0 0 0 10px;">読書案内『Moby Dick』</a>
+            <a href="index.html" style="text-decoration: none; color: #0000ee;">homeページ</a>
+            <a href="tags.html" style="margin-left: 10px; text-decoration: none; color: #0000ee;">HTMLタグ一覧</a>
+            <a href="moby_dick.html" style="margin-left: 10px; text-decoration: none; color: #0000ee;">読書案内『Moby Dick』</a>
         </div>
 
         <h1>重要なHTMLタグ一覧</h1>
@@ -25,6 +25,41 @@
         <p>
             以下のテーブルに含まれるHTMLタグは全体の一部に過ぎませんが、重要なHTMLについてはここで参照できます。
         </p>
+
+        <h2>ドキュメントタグ（Document Tag）</h2>
+
+        <table>
+            <tr>
+                <th>HTMLタグ</th>
+                <th>タグ名</th>
+                <th>目的</th>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>html</code></td>
+                <td style="padding: 20px;">html（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup<strong> L</strong>anguage）</td>
+                <td>HTML文書を示すもの</td>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>head</code></td>
+                <td style="padding: 20px;">ヘッダー（header）</td>
+                <td>HTML文書の全般の情報（メタデータ）を内包する要素</td>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>body</code></td>
+                <td style="padding: 20px;">ボディー（body）</td>
+                <td>HTML文書のコンテンツを示す要素</td>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>title</code></td>
+                <td style="padding: 20px;">タイトル（title）</td>
+                <td>HTML文書のタイトル</td>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>meta</code></td>
+                <td style="padding: 20px;">メタ情報（METAinformaiton）</td>
+                <td>HTML文書に後から機能を追加するためのもの</td>
+            </tr>
+        </table>
 
         <h2>ブロック要素（block element）</h2>
 
@@ -85,6 +120,11 @@
                 <td style="padding: 20px;">順序のないリスト（unordered list）</td>
                 <td>順序のない箇条書きのリストを表示</td>
             </tr>
+            <tr>
+                <td style="padding: 20px;"><code>blockquote</code></td>
+                <td style="padding: 20px;">囲まれた引用文（blockquote）</td>
+                <td>引用であることを示す</td>
+            </tr>
         </table>
 
         <h2>インライン要素（inline element）</h2>
@@ -136,8 +176,8 @@
                 <td style="padding: 20px;"><code>span</code></td>
                 <td style="padding: 20px;">スパン（span）</td>
                 <td>インライン要素としてグループ化</td>
-                <td><code>&lt;span&gt;</code>hello<code>&lt;/span&gt;</code>,world!</td>
-                <td><span>hello</span>,world</td>
+                <td><code>&lt;span style="color: #ff0000;&gt;</code>hello<code>&lt;/span&gt;</code>,world!</td>
+                <td><span style="color: #ff0000;">hello</span>,world</td>
             </tr>
             <tr>
                 <td style="padding: 20px;"><code>li</code></td>
@@ -145,6 +185,13 @@
                 <td>リストの項目を表示</td>
                 <td><code>&lt;li&gt;</code>1<code>&lt;/li&gt;</code><code>&lt;li&gt;</code>2<code>&lt;/li&gt;</code></td>
                 <td><li>1</li><li>2</li></td>
+            </tr>
+            <tr>
+                <td style="padding: 20px;"><code>br</code></td>
+                <td style="padding: 20px;">改行（break）</td>
+                <td>改行を行う</td>
+                <td>ここで、<code>&lt;br&gt;</code>改行をする</td>
+                <td>ここで、<br>改行をする</td>
             </tr>
         </table>
     </body>
